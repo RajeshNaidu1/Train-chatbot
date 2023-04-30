@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Ticket Booking</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Train Ticket Booking</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Search</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="search">
+			<h2>Search for Trains</h2>
+			<form class="center-block">
+				<label for="departure">Departure</label>
+				<input type="text" id="departure" name="departure">
+				<label for="arrival">Arrival</label>
+				<input type="text" id="arrival" name="arrival">
+				<label for="date">Date</label>
+				<input type="date" id="date" name="date">
+				<input type="submit" value="Search">
+			</form>
+		</section>
+		<section id="results">
+			<h2>Search Results</h2>
+			<ul>
+				<li>
+					<h3>Train Name</h3>
+					<p>Departure: Departure Station</p>
+					<p>Arrival: Arrival Station</p>
+					<p>Price: $</p>
+					<button>Book Now</button>
+				</li>
+				<!-- more search results -->
+			</ul>
+		</section>
+		<section id="booking">
+			<h2>Booking Details</h2>
+			<form class="center-block">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email">
+				<label for="card">Credit Card Number</label>
+				<input type="text" id="card" name="card">
+				<input type="submit" value="Confirm Booking">
+			</form>
+		</section>
+	</main>
+	<script type="text/javascript">
+        (function(d, m){
+            var kommunicateSettings = 
+                {"appId":"1c18d2bdf03f680c5ec287d9fda138318","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    </script>
+</body>
+</html>
